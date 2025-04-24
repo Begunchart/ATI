@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATI[UCV] 2025-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1cd8df;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            align-items: center;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .header-title {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .header-menu {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-input {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .header-button {
+            padding: 5px 10px;
+            background-color: #e9f5ff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            list-style: none;
+            
+        }
+
+        .grid-item {
+            background-color: #fff;
+            border: 1px solid #000;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 10px 10px 10px rgb(0, 0, 0,0.1);
+        }
+
+        .grid-item img {
+            width: 140px;
+            height: auto;
+        }
+
+        .grid-item p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #3366cc;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <div class="header-title">ATI <span style="font-size: 0.7em;">[UCV]</span> 2025-U</div>
+            <ul class="header-menu">
+                <li class="menu-item">
+                    Hola, Diego Molina
+                </li>
+                <li class="menu-item">
+                    <input type="text" placeholder="Nombre..." class="header-input">
+                </li>
+                <li class="menu-item">
+                    <button class="header-button">Buscar</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <ul class="grid-container">
+            <!-- Primera fila -->
+            <li class="grid-item">
+                <img src="27607013.jpg" alt="Maria Paula Hernero">
+                <p>Maria Paula Hernero</p>
+            </li>
+            <li class="grid-item">
+                <img src="dummy1/dummy.jpg" alt="Juan Antonio Perez">
+                <p>Juan Antonio Perez</p>
+            </li>
+            <li class="grid-item">
+                <img src="dummy2/dummy.jpg" alt="Maritza Rodriguez">
+                <p>Maritza Rodriguez</p>
+            </li>
+            <li class="grid-item">
+                <img src="dummy3/dummy.jpg" alt="Emilis Casado">
+                <p>Emilis Casado</p>
+            </li>
+
+            <!-- Segunda fila -->
+            <li class="grid-item">
+                <img src="dummy4/dummy.jpg" alt="Enrique Colina">
+                <p>Enrique Colina</p>
+            </li>
+            <li class="grid-item">
+                <img src="dummy5/dummy.jpg" alt="Maria Elena Pinto">
+                <p>Maria Elena Pinto</p>
+            </li>
+            <li class="grid-item">
+                <img src="dummy6/dummy.jpg" alt="Ronald Gutierrez">
+                <p>Ronald Gutierrez</p>
+            </li>
+            <li class="grid-item">
+                <img src="dummy1/dummy.jpg" alt="Juan Antonio Perez">
+                <p>Juan Antonio Perez</p>
+            </li>
+
+            <!-- Tercera fila -->
+            <li class="grid-item">
+                <img src="dummy2/dummy.jpg" alt="Maritza Rodriguez">
+                <p>Maritza Rodriguez</p>
+            </li>
+            <li class="grid-item">
+                <img src="dummy3/dummy.jpg" alt="Emilis Casado">
+                <p>Emilis Casado</p>
+            </li>
+            <li class="grid-item">
+                <img src="dummy4/dummy.jpg" alt="Enrique Colina">
+                <p>Enrique Colina</p>
+            </li>
+            <li class="grid-item">
+                <img src="dummy5/dummy.jpg" alt="Maria Elena Pinto">
+                <p>Maria Elena Pinto</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Copyright © 2020 Escuela de Computación - ATI. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</body>
+</html>
