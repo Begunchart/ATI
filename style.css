@@ -1,3 +1,16 @@
+@keyframes animation {
+    0% {
+        background-color: rgb(255, 255, 255);
+        scale: 100%;
+      }
+    100% {
+        background-color: #99c5dd;
+        scale: 110%;
+        transform: rotate(10deg);
+      }
+ 
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -68,21 +81,28 @@ header {
     border: 1px solid #000;
     text-align: center;
     padding: 10px;
-    
     box-shadow: 10px 10px 10px rgb(0, 0, 0,0.1);
-}
-
-.grid-item img {
-    width: 140px;
-    height: auto;
-    
 }
 
 .grid-item p {
     margin-top: 10px;
     font-size: 14px;
     margin: 0;
+    color: #000;
 }
+
+.grid-item:hover{
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards
+}
+.grid-item img {
+    width: 140px;
+    height: auto;
+    
+}
+
+
 
 footer {
     background-color: #3366cc;
