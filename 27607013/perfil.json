@@ -1,0 +1,15 @@
+{
+    "perfil":{	
+        "nombre":"Diego Molina",
+        "descripcion":"Soy estudiante de la Escuela de Computación, trabajo como auxiliar docente en CICORE y estoy estudiando para ir por el área de redes. También he trabajado como administrador de servidores para una empresa en Estados Unidos y como DevOps para empresas en Francia, además tengo el certificado AZ-900 de Azure.",
+        "color": "Verde",
+        "libro": ["Nacidos de la bruma"],
+        "musica": ["Rock en español"],
+        "video_juego": ["Mass Effect"],
+        "lenguajes": ["C", "C++", "Python"],
+        "email":"diego@molina-aquino.com",
+        "ci": "27607013",
+        "genero":"masculino",
+        "fecha_nacimiento":"04/03/1999"
+    }
+}
