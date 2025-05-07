@@ -120,7 +120,7 @@ footer {
     box-shadow: 10px 10px 10px rgb(0, 0, 0);
     
 }
-.container_1 {
+#container_1 {
     display: flex;
 }
 
@@ -153,6 +153,10 @@ h1 {
     font-style: italic;
 }
 
+.profile-container{
+    display: flex;
+}
+
 a:active {
     color: red !important;
 }
@@ -170,7 +174,7 @@ a:active {
     .profile-image-2{
         display: flex;
     }
-    .container_1 {
+    #container_1 {
         display: block;
     }
     .header-input {
