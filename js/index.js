@@ -2,7 +2,8 @@ async function loadJSON(file) {
     const response = await fetch(file);
     return await response.json();
 }
-
+const urlParams = new URLSearchParams(window.location.search);
+const lang = urlParams.get('lang').toLocaleUpperCase() || 'ES';
 loadJSON('perfiles.json')
     .then(async (data) => {
         const profilePaths = data.perfiles;

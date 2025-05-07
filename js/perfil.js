@@ -13,10 +13,13 @@ async function loadJSON(file) {
 
 const urlParams = new URLSearchParams(window.location.search);
 const path = urlParams.get('path');
+const lang = urlParams.get('lang').toLocaleUpperCase() || 'ES';
+
+const configLangFile = `conf/config${lang.toUpperCase()}.json`;
 
 Promise.all([
     loadJSON(path),
-    loadJSON("conf/configES.json")
+    loadJSON(configLangFile)
 ]).then(([perfilData, configData]) => {
     if (!perfilData || !configData) {
         console.error("Datos no cargados correctamente.");
