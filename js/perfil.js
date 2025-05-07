@@ -11,8 +11,11 @@ async function loadJSON(file) {
     }
 }
 
+const urlParams = new URLSearchParams(window.location.search);
+const path = urlParams.get('path');
+
 Promise.all([
-    loadJSON("27607013/perfil.json"),
+    loadJSON(path),
     loadJSON("conf/configES.json")
 ]).then(([perfilData, configData]) => {
     if (!perfilData || !configData) {

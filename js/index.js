@@ -31,6 +31,11 @@ loadJSON('perfiles.json')
                 gridItem.appendChild(img);
                 gridItem.appendChild(name);
                 container.appendChild(gridItem);
+
+                gridItem.addEventListener('click', () => {
+                    window.location.href = `perfil.html?path=${encodeURIComponent(path)}`;
+                });
+
             } catch (error) {
                 console.error(`Error cargando ${path}:`, error);
             }
