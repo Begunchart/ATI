@@ -13,7 +13,7 @@ async function loadJSON(file) {
 
 const urlParams = new URLSearchParams(window.location.search);
 const path = urlParams.get('path');
-const lang = urlParams.get('lang').toLocaleUpperCase() || 'ES';
+const lang = urlParams.get('lang') || 'es';
 
 const configLangFile = `conf/config${lang.toUpperCase()}.json`;
 
