@@ -11,6 +11,7 @@
  
   }
 
+
 body {
     margin: 0;
     padding: 0;
@@ -21,7 +22,7 @@ body {
 }
 
 header {
-    background-color: #1cd8df;
+    background-color: #007bff;
     border-bottom: 1px solid #ddd;
     padding: 10px 20px;
     align-items: center;
@@ -36,11 +37,12 @@ header {
 
 #header-title {
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
 }
 
 .header-menu {
     list-style: none;
+    color: #ffffff;
     display: flex;
     gap: 10px;
     padding-inline-start: 0px;
@@ -52,7 +54,7 @@ header {
     align-items: center;
 }
 
-.header-input {
+#header-input {
     padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -78,6 +80,7 @@ header {
 }
 
 .grid-item {
+    align-items: center;
     background-color: #fff;
     border: 1px solid #000;
     text-align: center;
@@ -103,8 +106,8 @@ header {
 }
 
 footer {
-    background-color: #3366cc;
-    color: #fff;
+    background-color: #007bff;
+    color: #000000;
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -159,6 +162,28 @@ h1 {
 
 a:active {
     color: red !important;
+}
+
+#barra{
+    display: flex;
+    align-items: center;
+}
+
+#buscador{
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.no-results {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #007bff; 
+    margin-top: 50px;
+    font-weight: bold;
+    padding: 20px;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
