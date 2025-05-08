@@ -12,22 +12,21 @@ async function loadJSON(file) {
 }
 
 const urlParams = new URLSearchParams(window.location.search);
-const path = urlParams.get('path');
+const cedula = urlParams.get('path');
 const lang = urlParams.get('lang') || 'es';
 
 const configLangFile = `conf/config${lang.toUpperCase()}.json`;
-
+const path = `${cedula}/perfil.json`;
 Promise.all([
     loadJSON(path),
     loadJSON(configLangFile)
-]).then(([perfilData, configData]) => {
-    if (!perfilData || !configData) {
+]).then(([perfilData, config]) => {
+    if (!perfilData || !config) {
         console.error("Datos no cargados correctamente.");
         return;
     }
 
     const perfil = perfilData.perfil;
-    const config = configData.config;
 
     const container = document.getElementById("container_1");
 

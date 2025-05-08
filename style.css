@@ -34,7 +34,7 @@ header {
     align-items: center;
 }
 
-.header-title {
+#header-title {
     font-weight: bold;
     color: #333;
 }

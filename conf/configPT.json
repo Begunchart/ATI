@@ -1,9 +1,8 @@
 {
-	"config":{
-	"sitio": ["ATI","[UCV]","2024-1"],
+	"sitio": ["ATI","[UCV]","2025-1"],
 	"home": "Início",
 	"login": "Sessão",
-	"copyRight":"Copyright © 2024 Escola de informática - ATI. Todos os direitos reservados",
+	"copyRight":"Copyright © 2025 Escola de informática - ATI. Todos os direitos reservados",
 	"nombre":"Nome",
 	"descripcion":"",
 	"color":"Minha cor favorita é",
@@ -14,4 +13,4 @@
 	"email":"Se precisar me contatar pode me escrever em [email]",
 	"buscar": "Procurar",
 	"saludo": "Olá"
-}}
+}

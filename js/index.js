@@ -3,26 +3,23 @@ async function loadJSON(file) {
     return await response.json();
 }
 
-loadJSON('perfiles.json')
+loadJSON('datos/index.json')
     .then(async (data) => {
         const profilePaths = data.perfiles;
 
         const container = document.getElementById('profiles-container');
 
-        for (const path of profilePaths) {
+        for (const perfil of profilePaths) {
             try {
-                const perfilData = await loadJSON(path);
-
-                const perfil = perfilData.perfil;
 
                 const gridItem = document.createElement('div');
                 gridItem.classList.add('grid-item');
 
                 const img = document.createElement('img');
-                img.src = `${perfil.imagen || 'default.jpg'}`;
+                img.src = `${perfil.imagen}`;
                 img.alt = perfil.nombre;
-                img.style.width = '140px';
-                img.style.height = 'auto';
+                img.style.width = 'auto';
+                img.style.height = '170px';
                 img.style.borderRadius = '4px';
 
                 const name = document.createElement('p');
@@ -33,7 +30,7 @@ loadJSON('perfiles.json')
                 container.appendChild(gridItem);
 
                 gridItem.addEventListener('click', () => {
-                    window.location.href = `perfil.html?path=${encodeURIComponent(path)}`;
+                    window.location.href = `perfil.html?path=${encodeURIComponent(perfil.ci)}`;
                 });
 
             } catch (error) {
@@ -41,22 +38,26 @@ loadJSON('perfiles.json')
             }
         }
 
-        const searchInput = document.getElementById('search-input');
-        const searchButton = document.getElementById('search-button');
-
-        if (searchInput && searchButton) {
-            searchButton.addEventListener('click', () => {
-                const term = searchInput.value.toLowerCase();
-                const items = document.querySelectorAll('.grid-item');
-
-                items.forEach(item => {
-                    const name = item.querySelector('p').textContent.toLowerCase();
-                    item.style.display = name.includes(term) ? 'block' : 'none';
-                });
-            });
-        }
-
     })
     .catch(error => {
         console.error('Error al cargar la lista de perfiles:', error);
     });
+
+const urlParams = new URLSearchParams(window.location.search);
+const lang = urlParams.get('lang') || 'es';
+const configLangFile = `conf/config${lang.toUpperCase()}.json`;
+
+loadJSON(configLangFile)
+    .then(async (configuracion) => {
+            try{
+            const footer = document.getElementById('copyright');
+            footer.textContent= configuracion.copyRight;
+            const header = document.getElementById("header-title");
+            console.log(footer);
+            header.innerHTML = `${configuracion.sitio[0]} <small>${configuracion.sitio[1]}</small> ${configuracion.sitio[2]}`;
+        }
+            catch (error){
+                console.error(`Error cargando`, error);
+            }
+        })
+    
