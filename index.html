@@ -3,88 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATI[UCV] 2025-1</title>
+    <title>ATI [UCV] 2024-1</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/index.js"></script>
 </head>
-<body class="perfiles">
+<body>
     <header>
         <nav class="header-nav">
-            <div class="header-title">ATI <span style="font-size: 0.7em;">[UCV]</span> 2025-U</div>
+            <div id="header-title"></div>
             <ul class="header-menu">
+                <li id="saludo"></li>
                 <li class="menu-item">
-                    Hola, Diego Molina
+                    <form id="barra">
+                        <input type="text" id="buscador" placeholder="Nombre...">
+                        <button type="submit">Buscar</button>
+                    </form>
                 </li>
-                <li class="menu-item">
-                    <input type="text" placeholder="Nombre..." class="header-input">
-                </li>
-                <li class="menu-item">
-                    <button class="header-button">Buscar</button>
-                </li>
+                <li class="menu-item"></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <ul class="grid-container">
-            <!-- Primera fila -->
-            <li class="grid-item">
-                <img src="27607013.jpg" alt="Maria Paula Hernero">
-                <p>Diego Molina</p>
-            </li>
-            <li class="grid-item">
-                <img src="dummy1/dummy.jpg" alt="Juan Antonio Perez">
-                <p>Juan Antonio Perez</p>
-            </li>
-            <li class="grid-item">
-                <img src="dummy2/dummy.jpg" alt="Maritza Rodriguez">
-                <p>Maritza Rodriguez</p>
-            </li>
-            <li class="grid-item">
-                <img src="dummy3/dummy.jpg" alt="Emilis Casado">
-                <p>Emilis Casado</p>
-            </li>
-
-            <!-- Segunda fila -->
-            <li class="grid-item">
-                <img src="dummy4/dummy.jpg" alt="Enrique Colina">
-                <p>Enrique Colina</p>
-            </li>
-            <li class="grid-item">
-                <img src="dummy5/dummy.jpg" alt="Maria Elena Pinto">
-                <p>Maria Elena Pinto</p>
-            </li>
-            <li class="grid-item">
-                <img src="dummy6/dummy.jpg" alt="Ronald Gutierrez">
-                <p>Ronald Gutierrez</p>
-            </li>
-            <li class="grid-item">
-                <img src="dummy1/dummy.jpg" alt="Juan Antonio Perez">
-                <p>Juan Antonio Perez</p>
-            </li>
-
-            <!-- Tercera fila -->
-            <li class="grid-item">
-                <img src="dummy2/dummy.jpg" alt="Maritza Rodriguez">
-                <p>Maritza Rodriguez</p>
-            </li>
-            <li class="grid-item">
-                <img src="dummy3/dummy.jpg" alt="Emilis Casado">
-                <p>Emilis Casado</p>
-            </li>
-            <li class="grid-item">
-                <img src="dummy4/dummy.jpg" alt="Enrique Colina">
-                <p>Enrique Colina</p>
-            </li>
-            <li class="grid-item">
-                <img src="dummy5/dummy.jpg" alt="Maria Elena Pinto">
-                <p>Maria Elena Pinto</p>
-            </li>
-        </ul>
+    <section id="profiles-container">
     </section>
 
-    <footer>
-        <p>Copyright © 2020 Escuela de Computación - ATI. Todos los derechos reservados.</p>
+    <footer id="copyright">
     </footer>
-</body>
 </body>
 </html>
